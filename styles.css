@@ -1,3 +1,99 @@
-h1 {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
   font-family: "Pixelify Sans", sans-serif;
+  height: 100%;
+  background-color: #563013;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: 1fr 0.5fr;
+}
+
+.upper {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+}
+
+.down {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  place-items: center;
+  gap: 2rem;
+  margin: 0 3rem 0 3rem;
+}
+
+.main-heading {
+  font-size: 7rem;
+  color: #17742a;
+
+  text-shadow: 0.6rem 0.5rem 0 #1a1a1a;
+}
+
+.label-score,
+.label-highscore {
+  font-size: 4.8rem;
+  color: #1a1a1a;
+  text-shadow: 0.1rem 0.19rem 0 #3d3d3d;
+}
+
+.btn {
+  padding: 10px;
+  font-size: 2rem;
+  font-family: "Pixelify Sans", sans-serif;
+  background-color: #17742a;
+  color: rgb(171, 171, 171);
+  text-shadow: 0.1rem 0.19rem 0 #1a1a1a;
+  border: none;
+  box-shadow: 12px 12px 2px 1px #43250e7d;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #125720;
+  color: rgb(206, 206, 206);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-shadow: 0.1rem 0.19rem 0 #1a1a1a;
+}
+
+.timer {
+  font-size: 2.5rem;
+  text-shadow: 0.1rem 0.19rem 0 #3d3d3d;
+  font-weight: 900;
+}
+
+img {
+  width: 79%;
+  height: 83%;
+}
+
+/* When screen is between 30em and 50em: 3 columns */
+@media (min-width: 30em) and (max-width: 50em) {
+  .down {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
+/* When screen is less than 30em: 2 columns */
+@media (max-width: 30em) {
+  .down {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+  }
 }

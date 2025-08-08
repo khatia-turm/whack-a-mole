@@ -11,10 +11,38 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pixelify+Sans:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/img/mole-normal-Photoroom.png"
+    />
 
     <title>Whack A Mole</title>
   </head>
   <body>
-    <h1>Whack A Mole</h1>
+    <div class="grid">
+      <section class="upper">
+        <h1 class="main-heading">Whack A Mole</h1>
+
+        <!-- score will be a class we will use in js to dynamically change the value  -->
+        <p class="label-score">Score: <span class="score">20</span></p>
+        <p class="label-highscore">
+          Highscore: <span class="highscore">0</span>
+        </p>
+
+        <button class="btn start">Start!</button>
+        <p class="timer">1:00:00</p>
+      </section>
+      <section class="down">
+        <img src="/img/mole-normal-Photoroom.png" alt="pile" />
+        <img src="/img/mole-squished-Photoroom.png" alt="pile" />
+        <img src="/img/empty-pile.png" alt="pile" />
+        <img src="/img/empty-pile.png" alt="pile" />
+        <img src="/img/empty-pile.png" alt="pile" />
+        <img src="/img/empty-pile.png" alt="pile" />
+        <img src="/img/empty-pile.png" alt="pile" />
+        <img src="/img/empty-pile.png" alt="pile" />
+      </section>
+    </div>
   </body>
 </html>
