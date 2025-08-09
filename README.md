@@ -24,3 +24,7 @@ Created as a practice project to sharpen my web development skills.
 ```bash
 git clone https://github.com/your-username/whack-a-mole.git
 ```
+
+## Live Demo
+
+Check out the deployed site [here](https://regal-lolly-7d4b70.netlify.app/)
