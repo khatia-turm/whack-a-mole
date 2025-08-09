@@ -82,6 +82,11 @@ img {
   width: 79%;
   height: 83%;
 }
+.down img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
 
 /* When screen is between 30em and 50em: 3 columns */
 @media (min-width: 30em) and (max-width: 50em) {
@@ -96,5 +101,13 @@ img {
   .down {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .down {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+    max-width: 300px;
+    gap: 8px;
   }
 }
