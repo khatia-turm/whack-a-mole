@@ -25,17 +25,20 @@
         <h1 class="main-heading">Whack A Mole</h1>
 
         <!-- score will be a class we will use in js to dynamically change the value  -->
-        <p class="label-score">Score: <span class="score">20</span></p>
+        <p class="label-score">Score: <span class="score">0</span></p>
         <p class="label-highscore">
           Highscore: <span class="highscore">0</span>
         </p>
 
         <button class="btn start">Start!</button>
-        <p class="timer">1:00:00</p>
+
+        <p class="timer">
+          Time remaining: <span id="minute">1</span>:<span id="second">00</span>
+        </p>
       </section>
       <section class="down">
-        <img src="/img/mole-normal-Photoroom.png" alt="pile" />
-        <img src="/img/mole-squished-Photoroom.png" alt="pile" />
+        <img src="/img/empty-pile.png" alt="pile" />
+        <img src="/img/empty-pile.png" alt="pile" />
         <img src="/img/empty-pile.png" alt="pile" />
         <img src="/img/empty-pile.png" alt="pile" />
         <img src="/img/empty-pile.png" alt="pile" />
@@ -43,6 +46,8 @@
         <img src="/img/empty-pile.png" alt="pile" />
         <img src="/img/empty-pile.png" alt="pile" />
       </section>
+      <button class="btn stop">Stop!</button>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
